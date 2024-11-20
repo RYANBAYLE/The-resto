@@ -1,0 +1,6 @@
+  h2{
+                font-family: $font1;
+                color: $color1;
+                font-size: 3rem;
+                font-weight: 100;
+            }
