@@ -23,6 +23,7 @@ html {
 }
 
 body {
+  background: #21201e;
   text-align: center;
   font-family: Roboto, serif;
   min-height: 100vh;
@@ -68,8 +69,12 @@ header nav {
           align-items: center;
   grid-template-columns: 10% 82% 8%;
   max-width: 1100px;
-  height: 12vh;
   margin: 0 auto;
+}
+@media screen and (max-width: 1050px) {
+  header nav {
+    grid-template-columns: 10% 70% 8%;
+  }
 }
 header nav .nav-left {
   font-family: Allura, cursive;
@@ -145,6 +150,11 @@ header .welcome .welcome-container h1 {
   font-size: 3.2rem;
   letter-spacing: 10px;
 }
+@media screen and (max-width: 750px) {
+  header .welcome .welcome-container h1 {
+    font-size: 2.5rem;
+  }
+}
 header .welcome .welcome-container img {
   scale: 0.6;
   margin-top: 25px;
@@ -163,6 +173,11 @@ header .welcome .welcome-container p {
   display: grid;
   grid-template-columns: 50% 50%;
   background: #eee;
+}
+@media screen and (max-width: 750px) {
+  .section1 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .section1-left {
@@ -231,9 +246,13 @@ header .welcome .welcome-container p {
   background: url(../../assets/image/store-01.jpg) center/cover;
   overflow: hidden;
 }
+@media screen and (max-width: 750px) {
+  .section1-right {
+    display: none;
+  }
+}
 
 .section2 {
-  height: 1000px;
   color: #eee;
   background: #21201e;
   position: relative;
@@ -305,6 +324,12 @@ header .welcome .welcome-container p {
   padding-top: 40px;
   background: #eee;
   color: #21201e;
+}
+@media screen and (max-width: 1050px) {
+  .section2 .section2-container .section2-bottom {
+    grid-template-columns: 100%;
+    grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  }
 }
 .section2 .section2-container .section2-bottom::before {
   content: "";
@@ -384,6 +409,11 @@ header .welcome .welcome-container p {
   grid-template-columns: 30% 70%;
   margin: 0 auto;
   max-width: 1050px;
+}
+@media screen and (max-width: 750px) {
+  .section3 .section3-container {
+    grid-template-columns: 1fr;
+  }
 }
 .section3 .section3-container .section3-left {
   height: 100%;
@@ -482,6 +512,11 @@ header .welcome .welcome-container p {
   width: 100%;
   gap: 5px;
 }
+@media screen and (max-width: 1050px) {
+  .section3 .section3-right .form-booking {
+    grid-template-columns: 1fr;
+  }
+}
 .section3 .section3-right .form-booking #people, .section3 .section3-right .form-booking input {
   background: transparent;
   border-style: none;
@@ -497,6 +532,11 @@ header .welcome .welcome-container p {
 .section4 {
   background: #21201e;
   position: relative;
+}
+@media screen and (max-width: 750px) {
+  .section4 {
+    display: none;
+  }
 }
 .section4::before {
   content: "Upcoming";
@@ -756,7 +796,6 @@ header .welcome .welcome-container p {
 .section5 .comment-container {
   z-index: 2;
   width: 65%;
-  height: 400px;
   position: relative;
 }
 .section5 .comment-container::before {
@@ -773,7 +812,6 @@ header .welcome .welcome-container p {
 }
 .section5 .comment-container .comment {
   background: #eee;
-  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -789,6 +827,7 @@ header .welcome .welcome-container p {
           justify-content: center;
 }
 .section5 .comment-container .comment p {
+  margin-top: 50px;
   line-height: 30px;
   width: 80%;
 }
@@ -819,6 +858,11 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 750px) {
+  footer {
+    background: none;
+  }
+}
 footer .footer-grid {
   display: grid;
   justify-items: start;
@@ -832,22 +876,32 @@ footer .footer-grid {
   height: 250px;
   margin: 0 auto;
 }
-footer .footer-left {
+@media screen and (max-width: 750px) {
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+footer .footer-grid .footer-left {
   text-align: left;
 }
-footer .footer-left h2 {
+@media screen and (max-width: 750px) {
+  footer .footer-grid .footer-left {
+    display: none;
+  }
+}
+footer .footer-grid .footer-left h2 {
   font-family: Allura, cursive;
   color: rgb(166, 114, 69);
   font-size: 2.5rem;
   font-weight: 400;
 }
-footer .footer-left p {
+footer .footer-grid .footer-left p {
   font-size: 0.8rem;
   line-height: 30px;
   font-weight: 100;
   color: #eee;
 }
-footer .footer-right {
+footer .footer-grid .footer-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -862,7 +916,7 @@ footer .footer-right {
       justify-content: space-around;
   height: 100%;
 }
-footer .footer-right .footer-right-top {
+footer .footer-grid .footer-right .footer-right-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -872,28 +926,35 @@ footer .footer-right .footer-right-top {
           flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
+          align-items: start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-footer .footer-right .footer-right-top label {
+@media screen and (max-width: 750px) {
+  footer .footer-grid .footer-right .footer-right-top {
+    margin-bottom: 50px;
+  }
+}
+footer .footer-grid .footer-right .footer-right-top label {
   text-transform: uppercase;
   font-family: Poppins, serif;
 }
-footer .footer-right .footer-right-top input {
+footer .footer-grid .footer-right .footer-right-top input {
   background: transparent;
   padding: 5px 20px;
   border: 1px solid rgba(128, 128, 128, 0.289);
   margin-top: 5px;
 }
-footer .footer-right .footer-right-bottom label {
+footer .footer-grid .footer-right .footer-right-bottom label {
   text-transform: uppercase;
   font-family: Poppins, serif;
   margin-left: 60px;
 }
-footer .footer-right .footer-right-bottom i {
+footer .footer-grid .footer-right .footer-right-bottom i {
   padding: 0 15px;
   font-size: 0.7rem;
   color: grey;
 }
-footer .footer-right .footer-right-bottom i:hover {
+footer .footer-grid .footer-right .footer-right-bottom i:hover {
   scale: 1.3;
 }/*# sourceMappingURL=index.css.map */

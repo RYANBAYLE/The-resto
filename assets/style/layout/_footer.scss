@@ -6,6 +6,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 750px) {
+        background: none;
+        
+    }
 
     .footer-grid{
     display: grid;
@@ -16,9 +20,17 @@ footer{
     width: 70%;
     height: 250px;
     margin: 0 auto;
+    @media screen and (max-width:750px) {
+        grid-template-columns: 1fr;
+        
     }
+   
     
     .footer-left{
+        @media screen and (max-width:750px) {
+            display: none;
+            
+        }
         text-align: left;
         h2{
             font-family: $font1;
@@ -43,7 +55,15 @@ footer{
         .footer-right-top{
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: start;
+            justify-content: space-around;
+            @media screen and (max-width:750px) {
+                margin-bottom: 50px;
+                
+            }
+
+
+            
             label{
                 text-transform: uppercase;
                 font-family: $font2;
@@ -56,6 +76,7 @@ footer{
             }
         }
         .footer-right-bottom{
+            
 
             label{
                 text-transform: uppercase;
@@ -75,5 +96,7 @@ footer{
         
 
     }
+
+}
 
 }

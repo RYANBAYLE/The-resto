@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 50% 50%;
     background: $white ;
+    @media screen and (max-width: 750px) {
+        grid-template-columns: 1fr;
+        
+    }
     }
     .section1-left{
         position: relative;
@@ -64,5 +68,8 @@
     .section1-right{
         background: url(../../assets/image/store-01.jpg) center/cover;
         overflow: hidden;
-
+        @media screen and (max-width: 750px) {
+            display: none;
+            
+        }
     }

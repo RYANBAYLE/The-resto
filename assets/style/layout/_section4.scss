@@ -1,6 +1,11 @@
 .section4{
     background: $black;
     position: relative;
+    @media screen and (max-width:750px) {
+        display: none;
+        
+    }
+  
     &::before{
         content: "Upcoming";
         position: absolute;
@@ -10,6 +15,7 @@
         top: 60px;
         left: 50%;
         transform: translateX(-50%);
+
 
     }
     
@@ -35,6 +41,7 @@
     height: 400px;
     width: 65%;
     margin: 0 auto;
+  
 
     h3{
         font-weight: 100;

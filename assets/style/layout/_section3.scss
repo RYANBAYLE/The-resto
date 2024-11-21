@@ -8,6 +8,10 @@
         grid-template-columns: 30% 70%;
         margin: 0 auto;
         max-width: 1050px;
+        @media screen and (max-width:750px) {
+            grid-template-columns: 1fr;
+            
+        }
         
         .section3-left{
             
@@ -104,7 +108,10 @@
                 grid-template-rows: 1fr 1fr;
                 width: 100%;
                 gap: 5px;
-                
+                @media screen and (max-width:1050px) {
+                    grid-template-columns: 1fr;
+                    
+                }
 
                 #people , input {
                     background: transparent;
@@ -117,6 +124,8 @@
                         border-bottom: 1px solid rgba(0, 0, 0, 0.39);
                     }
                 }
+
+              
             }
         }
         
