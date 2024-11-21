@@ -26,7 +26,9 @@ $color1: rgb(166, 114, 69);
     justify-content: center;
     align-items: center;
   }
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -39,5 +41,32 @@ body{
     font-family: $font3;
     min-height: 100vh;
 
+}
+button {
+    padding: 15px 35px;
+    text-transform: uppercase;
+    font-family: $font2;
+    color: $white;
+    background: $black ;
+    border: none;
+    border-radius: 50px;
+    letter-spacing: 5px;
+    margin-top: 40px;
+    transition: 0.2s linear;
+    &:hover{
+        scale: 1.2;
+        cursor: pointer;
+
+    }
+  
+}
+a{
+    cursor: pointer;
+    color: $white;
+
+    &:hover{
+        font-size: 0.8rem;
+    }
+    
 }
 

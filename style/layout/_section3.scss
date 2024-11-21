@@ -1,22 +1,13 @@
 .section3{
+    padding: 100px 15px 65px;
     background: $black;
-    height: 95vh;
-    display: block;
-    position: relative;
  
 
     .section3-container{
         display: grid;
-        justify-items: center;
-        justify-content: space-evenly;
         grid-template-columns: 30% 70%;
-        position: absolute;
-        top: 50%;
-        left: 15%;
-        right: 15%;
-        transform: translateY(-50%);
-        height: 75%;
-        width: 70%;
+        margin: 0 auto;
+        max-width: 1050px;
         
         .section3-left{
             
@@ -80,6 +71,10 @@
         }
         .section3-right{
             background: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             padding: 90px 90px 90px 60px;
             position: relative;
@@ -107,7 +102,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
-                max-width: 80%;
+                width: 100%;
                 gap: 5px;
                 
 
@@ -121,23 +116,6 @@
                         outline: none;
                         border-bottom: 1px solid rgba(0, 0, 0, 0.39);
                     }
-                }
-            }
-            button {
-                padding: 15px 35px;
-                text-transform: uppercase;
-                font-family: $font2;
-                color: $white;
-                background: $black ;
-                border: none;
-                border-radius: 50px;
-                letter-spacing: 5px;
-                margin-top: 40px;
-                transition: 0.2s linear;
-                &:hover{
-                    scale: 1.2;
-                    cursor: pointer;
-
                 }
             }
         }

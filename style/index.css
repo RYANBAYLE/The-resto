@@ -10,6 +10,10 @@
   font-family: "roboto";
   src: url(../assets/fonts/Roboto-Light.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,11 +28,36 @@ body {
   min-height: 100vh;
 }
 
+button {
+  padding: 15px 35px;
+  text-transform: uppercase;
+  font-family: Poppins, serif;
+  color: #eee;
+  background: #21201e;
+  border: none;
+  border-radius: 50px;
+  letter-spacing: 5px;
+  margin-top: 40px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+button:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+  color: #eee;
+}
+a:hover {
+  font-size: 0.8rem;
+}
+
 header {
   background: url(../../assets/img/bg-slider-06.jpg) center/cover;
   height: 100vh;
   width: 100%;
-  z-index: -1;
   position: relative;
   color: #eee;
 }
@@ -75,6 +104,9 @@ header nav .nav-right ul {
 header nav .nav-right ul li {
   padding: 7px;
   scale: 0.8;
+}
+header nav .nav-right ul li:hover {
+  scale: 1;
 }
 header .welcome {
   display: -webkit-box;
@@ -128,7 +160,6 @@ header .welcome .welcome-container p {
 }
 
 .section1 {
-  max-height: 440px;
   display: grid;
   grid-template-columns: 50% 50%;
   background: #eee;
@@ -136,6 +167,18 @@ header .welcome .welcome-container p {
 
 .section1-left {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-height: 100%;
   padding: 20px 15px;
   margin: 15px;
@@ -167,8 +210,11 @@ header .welcome .welcome-container p {
   scale: 0.5;
   border-radius: 50%;
   position: absolute;
-  top: 225px;
-  left: 39.5%;
+  top: 55%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 .section1-left h4 {
   margin-top: 120px;
@@ -183,6 +229,7 @@ header .welcome .welcome-container p {
 
 .section1-right {
   background: url(../../assets/img/store-01.jpg) center/cover;
+  overflow: hidden;
 }
 
 .section2 {
@@ -329,26 +376,14 @@ header .welcome .welcome-container p {
 }
 
 .section3 {
+  padding: 100px 15px 65px;
   background: #21201e;
-  height: 95vh;
-  display: block;
-  position: relative;
 }
 .section3 .section3-container {
   display: grid;
-  justify-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   grid-template-columns: 30% 70%;
-  position: absolute;
-  top: 50%;
-  left: 15%;
-  right: 15%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 75%;
-  width: 70%;
+  margin: 0 auto;
+  max-width: 1050px;
 }
 .section3 .section3-container .section3-left {
   height: 100%;
@@ -404,6 +439,19 @@ header .welcome .welcome-container p {
 }
 .section3 .section3-right {
   background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 90px 90px 90px 60px;
   position: relative;
@@ -431,7 +479,7 @@ header .welcome .welcome-container p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  max-width: 80%;
+  width: 100%;
   gap: 5px;
 }
 .section3 .section3-right .form-booking #people, .section3 .section3-right .form-booking input {
@@ -445,28 +493,9 @@ header .welcome .welcome-container p {
   outline: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.39);
 }
-.section3 .section3-right button {
-  padding: 15px 35px;
-  text-transform: uppercase;
-  font-family: Poppins, serif;
-  color: #eee;
-  background: #21201e;
-  border: none;
-  border-radius: 50px;
-  letter-spacing: 5px;
-  margin-top: 40px;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-}
-.section3 .section3-right button:hover {
-  scale: 1.2;
-  cursor: pointer;
-}
 
 .section4 {
-  height: 100vh;
   background: #21201e;
-  z-index: -100;
   position: relative;
 }
 .section4::before {
