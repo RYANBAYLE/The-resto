@@ -55,7 +55,7 @@ a:hover {
 }
 
 header {
-  background: url(../../assets/img/bg-slider-06.jpg) center/cover;
+  background: url(../../assets/image/bg-slider-06.jpg) center/cover;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -228,7 +228,7 @@ header .welcome .welcome-container p {
 }
 
 .section1-right {
-  background: url(../../assets/img/store-01.jpg) center/cover;
+  background: url(../../assets/image/store-01.jpg) center/cover;
   overflow: hidden;
 }
 
@@ -242,7 +242,7 @@ header .welcome .welcome-container p {
 .section2::before {
   content: "";
   position: absolute;
-  background: url(../../assets/img/bg-menu-01.jpg) bottom/cover;
+  background: url(../../assets/image/bg-menu-01.jpg) bottom/cover;
   width: 100%;
   height: 89vh;
   bottom: 0;
@@ -559,7 +559,7 @@ header .welcome .welcome-container p {
   grid-template-columns: 40% 60%;
 }
 .section4 .section4-container .box1 .date-container {
-  background: url(../../assets/img/event-01.jpg) center/cover;
+  background: url(../../assets/image/event-01.jpg) center/cover;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -617,7 +617,7 @@ header .welcome .welcome-container p {
   grid-template-columns: 40% 60%;
 }
 .section4 .section4-container .box11 .date-container {
-  background: url(../../assets/img/event-02.jpg) center/cover;
+  background: url(../../assets/image/event-02.jpg) center/cover;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -680,7 +680,7 @@ header .welcome .welcome-container p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../../assets/img/event-03.jpg) center/cover;
+  background: url(../../assets/image/event-03.jpg) center/cover;
 }
 .section4 .section4-container .box-right .box-right-container {
   background: #eee;
@@ -746,7 +746,7 @@ header .welcome .welcome-container p {
 .section5::after {
   content: "";
   position: absolute;
-  background: url(../../assets/img/gmap.jpg) center/cover;
+  background: url(../../assets/image/gmap.jpg) center/cover;
   width: 100%;
   height: 50vh;
   z-index: 1;
@@ -762,7 +762,7 @@ header .welcome .welcome-container p {
 .section5 .comment-container::before {
   content: "";
   position: absolute;
-  background: url(../../assets/img/avatar-02.jpg) center/cover;
+  background: url(../../assets/image/avatar-02.jpg) center/cover;
   height: 75px;
   width: 75px;
   border-radius: 50%;
@@ -805,7 +805,7 @@ header .welcome .welcome-container p {
 }
 
 footer {
-  background: url(../../assets/img/bg-footer.jpg) center/cover;
+  background: url(../../assets/image/bg-footer.jpg) center/cover;
   z-index: -1;
   color: #eee;
   height: 250px;
