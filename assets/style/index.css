@@ -163,7 +163,7 @@ header .welcome .welcome-container h1 {
 }
 @media screen and (max-width: 750px) {
   header .welcome .welcome-container h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 header .welcome .welcome-container img {
@@ -321,6 +321,11 @@ header .welcome .welcome-container p {
   padding: 50px 0 7px 0;
   font-weight: 400;
 }
+@media screen and (max-width: 750px) {
+  .section2 .section2-container .section2-top ul li {
+    font-size: 0.8rem;
+  }
+}
 .section2 .section2-container .section2-bottom {
   position: relative;
   height: 93.5%;
@@ -361,6 +366,11 @@ header .welcome .welcome-container p {
   padding-bottom: 40px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.208);
 }
+@media screen and (max-width: 450px) {
+  .section2 .section2-container .section2-bottom .plat {
+    grid-template-columns: 1fr;
+  }
+}
 .section2 .section2-container .section2-bottom .plat img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,6 +390,12 @@ header .welcome .welcome-container p {
     padding-top: 50px;
   }
 }
+@media screen and (max-width: 450px) {
+  .section2 .section2-container .section2-bottom .plat img {
+    padding-top: 50px;
+    scale: 0.7;
+  }
+}
 .section2 .section2-container .section2-bottom .plat .nom-du-plat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,6 +408,11 @@ header .welcome .welcome-container p {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: left;
+}
+@media screen and (max-width: 650px) {
+  .section2 .section2-container .section2-bottom .plat .nom-du-plat {
+    text-align: center;
+  }
 }
 .section2 .section2-container .section2-bottom .plat .nom-du-plat h4 {
   text-transform: uppercase;
