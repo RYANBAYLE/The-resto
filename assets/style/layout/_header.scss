@@ -17,6 +17,12 @@ header{
             grid-template-columns: 10% 70% 8%;
             
         }
+        @media screen and (max-width:750px) {
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+          
+            
+        }
 
         .nav-left{
             font-family: $font1;
@@ -24,6 +30,10 @@ header{
             text-align: left;
         }
         .nav-middle {
+            @media screen and (max-width:750px) {
+               display: none;
+                
+            }
             ul {
                 display: flex;
                 align-items: center;

@@ -76,10 +76,21 @@ header nav {
     grid-template-columns: 10% 70% 8%;
   }
 }
+@media screen and (max-width: 750px) {
+  header nav {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
 header nav .nav-left {
   font-family: Allura, cursive;
   font-size: 1.6rem;
   text-align: left;
+}
+@media screen and (max-width: 750px) {
+  header nav .nav-middle {
+    display: none;
+  }
 }
 header nav .nav-middle ul {
   display: -webkit-box;
@@ -363,6 +374,11 @@ header .welcome .welcome-container p {
           justify-content: center;
   border-radius: 50%;
   width: 100%;
+}
+@media screen and (max-width: 750px) {
+  .section2 .section2-container .section2-bottom .plat img {
+    padding-top: 50px;
+  }
 }
 .section2 .section2-container .section2-bottom .plat .nom-du-plat {
   display: -webkit-box;
