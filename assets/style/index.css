@@ -366,11 +366,6 @@ header .welcome .welcome-container p {
   padding-bottom: 40px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.208);
 }
-@media screen and (max-width: 450px) {
-  .section2 .section2-container .section2-bottom .plat {
-    grid-template-columns: 1fr;
-  }
-}
 .section2 .section2-container .section2-bottom .plat img {
   display: -webkit-box;
   display: -ms-flexbox;
